@@ -1,0 +1,3 @@
+Describe a configuration management tool and where you have used it in your role
+
+A configuration management tool is a tool that helps you to automatize tasks and monitor and manage some configuration processes. I never use tools like ansible because I used to work with Docker and Kubernetes. 
