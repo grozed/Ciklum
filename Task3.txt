@@ -1,0 +1,15 @@
+We need a CI/CD pipeline that does the following:
+
+Git for version control
+A tool for a build service
+A tool to manage an audited and authorized deployment service
+Please describe how you would chain these tools into a pipeline that can handle developers testing, developing, building and deploying their work.
+
+First of all, we need to decide which tool are we goint to follow to create the CICD. I´m my case, I will se Jenkins, but could be others, like Octupus or GitLab CI tools. 
+
+In this pipeline creation, in the configuration parameters, we should select a remote git repository to checkout where are we going to need to automatically redeploy. This git repository could be from bitbucket, github or the repository tecnology are you using. 
+
+Then, we can start to create a groovy pipeline. I suponse we are going to deploy the others python task I did it on the others task. Probably I will dockerize them and add a rest API so we can comunicate and call the functions. 
+
+I will only use the automatics deploy on jenkins for test deploy, adding unitary test. To deploy to a production environment, I will use a VPN to connect to a remote machine with credentials to run a script for deploy purpose, or a small web to manually deploy. Or add it another jenkins server with no automation deploy and more secure option to manually deploy. 
+
